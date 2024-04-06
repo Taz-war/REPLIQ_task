@@ -15,6 +15,7 @@ export default function SignIn() {
     });
     if (!result.error) {
       // Handle success
+      console.log("hello from fahim")
     } else {
       // Handle errors
     }
@@ -41,7 +42,7 @@ export default function SignIn() {
                 id="password" name="password" required />
             </div>
             <div className="flex items-baseline justify-between">
-              <button className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Login</button>
+              <button className="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900" type="submit">Login</button>
             </div>
           </div>
         </form>

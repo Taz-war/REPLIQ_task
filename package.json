@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "json-server": "node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +17,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "daisyui": "^4.10.1",
+    "json-server": "^1.0.0-alpha.23",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3"
   }
