@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Cart from "./cart/page";
 import Products from "./ProductsListView/page";
-// import ProductDetail from "./product/[id]/page";
+import ProductDetail from "./product/[id]/page";
 import Dashboard from "./admin/dashboard/page";
 import Customers from "./admin/customers/page";
 import AddCustomer from "./admin/customers/add/page";
@@ -15,7 +15,7 @@ export default function Home({ Component, pageProps }) {
     // <CartProvider>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         {/* <SignIn /> */}
-        <div className="container mx-auto px-4">
+        {/* <div className="container mx-auto px-4">
         <Head>
           <title>Your Site Name</title>
           <meta name="description" content="Your site description" />
@@ -30,13 +30,13 @@ export default function Home({ Component, pageProps }) {
             View Products
           </Link>
         </main>
-      </div>
-        <Cart  />
-        <Products />
-        {/* <ProductDetail /> */}
-        <Dashboard />
+      </div> */}
+        {/* <Cart  />
+        <Products /> */}
+        <ProductDetail />
+        {/* <Dashboard />
         <Customers />
-        <AddCustomer />
+        <AddCustomer /> */}
       </main>
     // </CartProvider>
   );
