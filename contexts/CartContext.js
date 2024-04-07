@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useState } from 'react';
 import items from '@/data/cartItems.json'
 
-const CartContext = createContext();
+export const CartContext = createContext();
 
 export function useCart() {
     return useContext(CartContext);

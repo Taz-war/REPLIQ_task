@@ -12,10 +12,10 @@ import { CartProvider } from "@/contexts/CartContext";
 
 export default function Home({ Component, pageProps }) {
   return (
-    <CartProvider>
+    // <CartProvider>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         {/* <SignIn /> */}
-        {/* <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4">
         <Head>
           <title>Your Site Name</title>
           <meta name="description" content="Your site description" />
@@ -30,14 +30,14 @@ export default function Home({ Component, pageProps }) {
             View Products
           </Link>
         </main>
-      </div> */}
-        <Cart {...pageProps} />
-        {/* <Products /> */}
+      </div>
+        <Cart  />
+        <Products />
         {/* <ProductDetail /> */}
-        {/* <Dashboard /> */}
-        {/* <Customers /> */}
-        {/* <AddCustomer /> */}
+        <Dashboard />
+        <Customers />
+        <AddCustomer />
       </main>
-    </CartProvider>
+    // </CartProvider>
   );
 }

@@ -7,6 +7,7 @@ export default function AddCustomer() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        
         // Here you would handle form submission to your backend
         alert('Customer added!'); // Placeholder action
         navigation.navigate('/admin/customers'); // Redirect back to customer list

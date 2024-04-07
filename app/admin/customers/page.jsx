@@ -1,9 +1,9 @@
-// app/admin/customers/page.jsx
-const fakeCustomers = [
-    { id: 1, name: 'John Doe', email: 'john@example.com' },
-    { id: 2, name: 'Jane Doe', email: 'jane@example.com' },
-    // Add more customers as needed
-];
+import fakeCustomers from '@/data/users.json'
+// const fakeCustomers = [
+//     { id: 1, name: 'John Doe', email: 'john@example.com' },
+//     { id: 2, name: 'Jane Doe', email: 'jane@example.com' },
+//     // Add more customers as needed
+// ];
 
 export default function Customers() {
     return (
