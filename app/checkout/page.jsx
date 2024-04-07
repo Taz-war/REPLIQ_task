@@ -28,6 +28,7 @@ export default function Checkout() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle the submit action here...
+    console.log("hello")
     try {
       const res = await fetch('/api/checkout', {
         method: 'POST',
@@ -39,7 +40,8 @@ export default function Checkout() {
 
       if (res.status === 200) {
         // Redirect to the home page after successful submission
-        router.push('/ProductsListView');
+        // router.push('/ProductsListView');
+
       } else {
         // Handle errors based on your preference
         console.error('Failed to submit order');
@@ -53,7 +55,7 @@ export default function Checkout() {
     <div className="flex items-start justify-center min-h-screen  px-6 mt-10">
       <div className=" bg-slate-700 p-8 rounded-lg shadow-md w-full max-w-lg mr-6">
         <h1 className="text-2xl font-bold text-center mb-8">Checkout</h1>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={()=>handleSubmit()} className="space-y-4">
           {/* Add all your form fields here */}
           <input type="text" name="name" placeholder="Full Name" onChange={handleChange} required className="input input-bordered w-full" />
           <input type="email" name="email" placeholder="Email" onChange={handleChange} required className="input input-bordered w-full" />
